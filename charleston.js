@@ -26,7 +26,7 @@ if($responses.length) {
             i = 0;
         }
 
-        setTimeout(hideQuote, 5000);
+        setTimeout(hideQuote, 6000);
     }
 
     function hideQuote() {
