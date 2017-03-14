@@ -1,0 +1,16 @@
+{
+  "name": "static-rapid-response",
+  "dependencies": {
+    "csvtojson": "^1.1.4",
+    "he": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run csvtomarkup",
+    "csvtomarkup": "npm run csvtojson && npm run jsontomarkup",
+    "csvtojson": "csvtojson input.csv > input.json",
+    "jsontomarkup": "node jsontomarkup.js"
+  },
+  "author": "David Furnes <dfurnes@dosomething.org>",
+  "license": "MIT"
+}
