@@ -82,7 +82,7 @@
 
     @media (min-width: 760px) {
       .header--rapid-response .header__subtitle {
-        margin: 48px auto;
+        margin: 24px auto;
       }
     }
 
@@ -112,21 +112,19 @@
     }
 
     .buttons {
-      padding-top: 50px;
       padding-bottom: 5px;
       display: flex;
       justify-content: space-around;
     }
 
-    .secondary-button {
+    button {
       cursor: pointer;
-      background: #ffffff;
-      color: #c71120;
+      margin: 24px 0;
       font-size: 1em;
       font-weight: bold;
-      height: 85px;
       width: 100%;
-      max-width: 220px;
+      max-width: 330px;
+      height: 85px;
       border: 0;
       border-radius: 4px;
       outline: 0;
@@ -135,8 +133,15 @@
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
     }
 
-    .footnote {
-      color: #f6ecca;
+    .primary-button {
+      background: #331133;
+      color: #ffffff;
+    }
+
+    .secondary-button {
+      background: #ffffff;
+      color: #c71120;
+      max-width: 220px;
     }
   </style>
 
@@ -172,9 +177,14 @@
           <div class="wrapper">
             <div class="rapid-response-title">
               <h1>Today is Election Day</h1>
-              <button>Find your polling place</button>
+              <button class="primary-button">Find your polling place</button>
+              <p class="header__subtitle -paragraph">
+                <strong>Happy Election Day!</strong>
+                Voting is one of the most impactful things you can do. Get out there and something something something
+                and
+                how you can too.
+              </p>
             </div>
-
             <div class="buttons">
               <button class="secondary-button">Learn More</button>
               <button class="secondary-button">Send a Pic</button>
