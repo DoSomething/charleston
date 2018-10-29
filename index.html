@@ -2,7 +2,9 @@
 
 <!--[if lte IE 8 ]> <html dir="ltr" lang="en-US" class="modernizr-no-js ie8"> <![endif]-->
 <!--[if IE 9 ]> <html dir="ltr" lang="en-US" class="modernizr-no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class="modernizr-no-js"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="modernizr-no-js">
+<!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
-  <link type="text/css" rel="stylesheet" href="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/app.css?om3acf" media="all">
+  <link type="text/css" rel="stylesheet" href="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/app.css?om3acf"
+    media="all">
 
   <link rel="shortcut icon" href="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/node_modules/@dosomething/forge/assets/images/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/node_modules/@dosomething/forge/assets/images/apple-touch-icon-precomposed.png">
@@ -36,368 +39,223 @@
   <![endif]-->
 
   <style type="text/css" media="screen">
-      html, body, .chrome, .chrome > .wrapper {
-          background: #213444;
-      }
+    html,
+    body,
+    .chrome,
+    .chrome>.wrapper {
+      background: #c71120;
+    }
 
+    .rapid-response-container {
+      background: #c71120;
+      padding: 100px 24px 100px;
+    }
+
+    @media (min-width: 760px) {
       .rapid-response-container {
-          background: #213444;
-          padding: 100px 24px 100px;
+        padding-top: 200px;
+        padding-bottom: 100px;
       }
+    }
 
-      @media (min-width: 760px) {
-          .rapid-response-container {
-              padding-top: 100px;
-              padding-bottom: 200px;
-          }
-      }
+    .header--rapid-response {
+      background: #c71120;
+      padding: 0;
+    }
 
-      .header--rapid-response {
-          background: #213444;
-          padding: 0;
-      }
+    .header--rapid-response>.wrapper {
+      text-align: center;
+    }
 
-      .header--rapid-response > .wrapper {
-          text-align: center;
-      }
+    .header--rapid-response .header__subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      color: #f6ecca;
+      margin: 24px auto;
+      text-shadow: none;
+    }
 
+    .header--rapid-response .header__subtitle strong {
+      color: #f6ecca;
+      margin: 12px auto;
+    }
+
+    @media (min-width: 760px) {
       .header--rapid-response .header__subtitle {
-          font-size: 16px;
-          font-weight: 400;
-          color: #f6ecca;
-          margin: 24px auto;
-          text-shadow: none;
+        margin: 48px auto;
       }
+    }
 
-      .header--rapid-response .header__subtitle strong {
-          color: #f6ecca;
-          margin: 12px auto;
+    .header--rapid-response .header__subtitle.-cta {
+      margin-bottom: 0;
+    }
+
+    .header--rapid-response .header__subtitle.-paragraph {
+      max-width: 620px;
+      padding: 0 12px !important;
+    }
+
+    .header--rapid-response .header__subtitle.-paragraph a {
+      color: #ed4940;
+      text-decoration: underline;
+    }
+
+    .rapid-response-title {
+      max-width: 700px;
+      margin: 12px auto 0;
+    }
+
+    @media (min-width: 760px) {
+      .rapid-response-title {
+        margin: 24px auto 24px;
       }
+    }
 
-      @media (min-width: 760px) {
-          .header--rapid-response .header__subtitle {
-              margin: 48px auto;
-          }
-      }
+    .buttons {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-around;
+    }
 
-      .header--rapid-response .header__subtitle.-cta {
-          margin-bottom: 0;
-      }
+    .secondary-button {
+      cursor: pointer;
+      background: #ffffff;
+      color: #c71120;
+      height: 40px;
+      width: 100%;
+      max-width: 220px;
+      border: 0;
+      border-radius: 4px;
+      outline: 0;
+    }
 
-      .header--rapid-response .header__subtitle.-paragraph {
-          max-width: 620px;
-          padding: 0 12px !important;
-      }
-
-      .header--rapid-response .header__subtitle.-paragraph a {
-      	color: #ed4940;
-        text-decoration: underline;
-      }
-
-      .rapid-response-responses {
-          display: table;
-          background: #213444;
-          color: #f6ecca;
-          text-align: center;
-          min-height: 275px;
-          height: 40vh;
-          max-width: 700px;
-          margin: 12px auto 0;
-      }
-
-      .rapid-response-responses > .wrapper {
-          display: table-cell;
-          vertical-align: middle;
-      }
-
-      .rapid-response-responses li {
-          display: none;
-          font-size: 22px;
-      }
-
-      @media (min-width: 760px) {
-          .rapid-response-responses {
-              margin: 24px auto 24px;
-              height: 50vh;
-          }
-
-          .rapid-response-responses li {
-              font-size: 24px;
-          }
-      }
-
-      .rapid-response-responses cite {
-          display: block;
-          text-align: center;
-          margin-top: 12px;
-      }
-
-      .footnote {
-        color: #f6ecca;
-      }
+    .footnote {
+      color: #f6ecca;
+    }
   </style>
 
   <script type="text/javascript" src="/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/modernizr.js"></script>
 </head>
 
 <body>
-<div class="chrome">
-  <div id="top" class="wrapper">
-    <nav class="navigation -white -floating">
-      <a class="navigation__logo" href="http://www.dosomething.org"><span>DoSomething.org</span></a>
-			<a class="navigation__toggle js-navigation-toggle" href="#"><span>Show Menu</span></a>
-			<div class="navigation__menu">
-				<ul class="navigation__primary">
-					<li>
-						<a href="https://www.dosomething.org/us/campaigns">
-							<strong class="navigation__title">Explore Campaigns</strong>
-							<span class="navigation__subtitle">Find ways to take action both online and off.</span>
-						</a>
-					</li>
+  <div class="chrome">
+    <div id="top" class="wrapper">
+      <nav class="navigation -white -floating">
+        <a class="navigation__logo" href="http://www.dosomething.org"><span>DoSomething.org</span></a>
+        <a class="navigation__toggle js-navigation-toggle" href="#"><span>Show Menu</span></a>
+        <div class="navigation__menu">
+          <ul class="navigation__primary">
+            <li>
+              <a href="https://www.dosomething.org/us/campaigns">
+                <strong class="navigation__title">Explore Campaigns</strong>
+                <span class="navigation__subtitle">Find ways to take action both online and off.</span>
+              </a>
+            </li>
 
-					<li>
-						<a href="https://www.dosomething.org/us/about/who-we-are">
-							<strong class="navigation__title">What Is DoSomething.org?</strong>
-							<span class="navigation__subtitle">A global movement for good. </span>
-						</a>
-					</li>
-				</ul>
-    </nav>
+            <li>
+              <a href="https://www.dosomething.org/us/about/who-we-are">
+                <strong class="navigation__title">What Is DoSomething.org?</strong>
+                <span class="navigation__subtitle">A global movement for good. </span>
+              </a>
+            </li>
+          </ul>
+      </nav>
 
-    <main class="rapid-response-container">
-      <div class="header header--rapid-response" role="banner">
-        <div class="wrapper">
-            <div id="responses" class="rapid-response-responses">
-              <ul class="wrapper">
-                <li>
-                  It&apos;s important people recognize how much women contribute to society, and how important we are. People seem to forget that these days.
-                  <cite class="footnote">&mdash; Katelyn, 16</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is extremely important to me because people don&apos;t understand the importance of women in society. This is our chance to show the world just how valuable we are.
-                  <cite class="footnote">&mdash; Kennedy, 15</cite>
-                </li>
-                <li>
-                  Women have been cut out of history, treated like property, and kept out of power. International Women&apos;s Day celebrates women rising above the inequality that they have been handed. It also reminds us that we need to continue fighting. For black women, for Latina women, for native women, for Asian women, for Islamic women, for Jewish women, for LGBTQ+ women, for ALL women.
-                  <cite class="footnote">&mdash; Janet, 21</cite>
-                </li>
-                <li>
-                  Women are taken for granted and overlooked many times. Having a special day for us women allows others to realize that we do have an impact on the world.
-                  <cite class="footnote">&mdash; Kaitlin, 20</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because it&apos;s an opportunity to join with all people and acknowledge the importance of gender equality and the need to continue fighting for economic equality.
-                  <cite class="footnote">&mdash; Natasha, 18</cite>
-                </li>
-                <li>
-                  This is important to me because women are still discriminated in today&apos;s world. Sure it&apos;s gotten a little bit better, but not by a lot. I feel that it is important to recognize women not just on March 8th but everyday.
-                  <cite class="footnote">&mdash; Grace, 13</cite>
-                </li>
-                <li>
-                  A day to commemorate hard working women that rarely get the same recognition as men? Count me in!
-                  <cite class="footnote">&mdash; Cassandra, 18</cite>
-                </li>
-                <li>
-                  My life has been shaped by strong and powerful women. I would be nothing if not for their resilience, persistence, and resistance.
-                  <cite class="footnote">&mdash; Rosie, 19</cite>
-                </li>
-                <li>
-                  Women are so important to the community. From mothers to working women, they support the equal rights in the field that so many men are part of. I love being a woman in this day and age! Thank you to all those who were able to pave the way for modern day ladies today.
-                  <cite class="footnote">&mdash; Darlene, 19</cite>
-                </li>
-                <li>
-                  International Woman&apos;s Day is important because it gives appreciation to the women who work hard for their families, communities, and society. Women are not given the praise we deserve; for what we have accomplished, and a women&apos;s day gives a little spot light on our achievements. This day is important because it raises awareness on women&apos;s rights and equality.
-                  <cite class="footnote">&mdash; Asya, 18</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because I&apos;m tired of living and growing up in a sexist society that consistently degrades women.
-                  <cite class="footnote">&mdash; Eikaiva, 16</cite>
-                </li>
-                <li>
-                  Women make important decisions on upbringing,teaching and show perspectives in a different manner.Women like my mom make the world a better place as she has taught me to be the man I am today.Women need much respect.
-                  <cite class="footnote">&mdash; Dillon, 17</cite>
-                </li>
-                <li>
-                  International Woman&apos;s Day is important to me because it respectfully recognizes women. I, being a woman myself, believe that women deserve recognition due to the fact that they give life to the very people that populate the world and they have the same abilities and capacities as men. The thought that there are some who believe women are inferior to men proves why this day is necessary and significant. We are all human, with the same kind of emotions and genetic makeups. This day represents women not allowing men to make them feel inferior because no one can make them feel inferior without their consent.
-                  <cite class="footnote">&mdash; Ashley-Marie, 17</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because it is a good reminder of the Women in our lives. I wouldn&apos;t be where I am today without the influence of my mother, my sage grandmothers, and my inspiring female teachers.
-                  <cite class="footnote">&mdash; Victoria, 17</cite>
-                </li>
-                <li>
-                  This day is a chance for women alike to gather around and celebrate each other. Women have been through a lot, my self included, and we need a day to acknowledge that. All the derogatory things that have been said or done to us needs to stop and we can use this day to say &quot;I am a strong individual person that does not need &apos;the man&apos; to do anything for me!&quot;
-                  <cite class="footnote">&mdash; Iana, 15</cite>
-                </li>
-                <li>
-                  Women have worked hard throughout history to be given the same opportunities as men and are still fighting for that. It&apos;s important to remember what women have done in the past and to recognize what women are doing today.
-                  <cite class="footnote">&mdash; Lauren, 16</cite>
-                </li>
-                <li>
-                  International Women&apos;s day is important to me because it gives strong women in history the recognition that they need.
-                  <cite class="footnote">&mdash; Rebecca, 17</cite>
-                </li>
-                <li>
-                  As women, we are half of the population of this earth. Unfortunately, we are often treated as the lesser half. This is wrong and this needs to stop. Women deserve the respect and dignity given to every other man on the planet. We deserve the right to as great a life as any other human.
-                  <cite class="footnote">&mdash; Sabrina, 19</cite>
-                </li>
-                <li>
-                  At school, I see boys in my grade having privileges that I don&apos;t- and taking them for granted. To imagine this will continue for the rest of my life disgusts me, and motivates a need for change.
-                  <cite class="footnote">&mdash; Aspyn, 14</cite>
-                </li>
-                <li>
-                  Sexism is far from a thing of the past. It has gone on far too long and it will NOT be allowed to become a social norm.
-                  <cite class="footnote">&mdash; Gabrielle, 17</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me, because I wouldn&apos;t be where I am today without the strong women in my life who have taught me to be proud of myself and to take pride in being a woman.
-                  <cite class="footnote">&mdash; Isabel, 18</cite>
-                </li>
-                <li>
-                  I believe in the power of the protest, and the meaning to show equality inspires me. It is not just about women, but all other minorities as well.
-                  <cite class="footnote">&mdash; Kaila, 15</cite>
-                </li>
-                <li>
-                  Women of all shapes, races, religions, and sexulaties have spent countless years fighting for rights that men have always had, and have created beautiful things; this day is well deserved for all the women who have made impacts, big or small, in the world.
-                  <cite class="footnote">&mdash; Sami, 13</cite>
-                </li>
-                <li>
-                  Women&apos;s day is important to me because it&apos;s important for women to stand up for their own rights and to bond together and help each other out.
-                  <cite class="footnote">&mdash; Teya, 13</cite>
-                </li>
-                <li>
-                  As a former victim of sexual harassment, International Women&apos;s Day is important to me because it&apos;s a day where millions of women from various ethnic, religious, and social backgrounds unite and speak against the injustices faced by women worldwide.
-                  <cite class="footnote">&mdash; Bella Pham, 15</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because as a women of color, we are prejudiced because of our appearances. we are judged not by our actions or heart, but by our characteristics. it is time women have their fair share in the workforce and in society.
-                  <cite class="footnote">&mdash; daniela, 17</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because we, as women, have to protect and stand for, not just our own rights, but the rights of those who have been silenced as well.
-                  <cite class="footnote">&mdash; Katie, 16</cite>
-                </li>
-                <li>
-                  It reminds us of how important women are to society and how many contributions they&apos;ve made to the community, despite not always being treated equal.
-                  <cite class="footnote">&mdash; Rabia, 17</cite>
-                </li>
-                <li>
-                  Women&apos;s Day is important to me because the rights I have today are the product of hundreds of years of women fighting for equal rights. I am a scientist, a mountain biker, an athlete, and an equally-paid teacher, all things I couldn&apos;t be without the women who fought before me. The history of fighting for women&apos;s rights makes me what I am today. The least I can do in return is keep fighting!
-                  <cite class="footnote">&mdash; Elena, 17</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because it is a chance to show the world how important women are to society and that we are a force to be reckoned with.
-                  <cite class="footnote">&mdash; Crystal, 15</cite>
-                </li>
-                <li>
-                  Because besides being a girl, I am also a person who has to live in this world on this planet and any problem that effects 50% of the world&apos;s population is in reality hurting everything.
-                  <cite class="footnote">&mdash; Anyar, 17</cite>
-                </li>
-                <li>
-                  International women&apos;s day is important because as a woman, I am standing up for my sisters that are not as privileged as I am because we all deserve the same rights and opportunities
-                  <cite class="footnote">&mdash; Allie, 16</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because not all women are treated equally. From wage gaps to limited education in some countries, women just are not treated as they should be.
-                  <cite class="footnote">&mdash; Ashley, 16</cite>
-                </li>
-                <li>
-                  International Women&apos;s Day is important to me because women and their accomplishments are put down so often by society. It&apos;s amazing to see people around the world come together to raise women up instead of pushing them down.
-                  <cite class="footnote">&mdash; Cady, 18</cite>
-                </li>
-                <li>
-                  I&apos;ve always been stereotyped to like pink and be delicate and since kindergarten I&apos;ve been fighting that without knowing. To just be thought as another person who can do what everyone else is doing has always been a goal of mine.
-                  <cite class="footnote">&mdash; Isabella, 16</cite>
-                </li>
-                <li>
-                  IWD is important to me because, as a woman, I know the struggles of women in everyday life, such as lower wages, being seen as &apos;sexual objects&apos; or even being seen as &apos;too emotional&apos;.
-                  <cite class="footnote">&mdash; Meghan, 15</cite>
-                </li>
-              </ul>
-
+      <main class="rapid-response-container">
+        <div class="header header--rapid-response" role="banner">
+          <div class="wrapper">
+            <div class="rapid-response-title">
+              <h1>Today is Election Day</h1>
+              <button>Find your polling place</button>
             </div>
 
-            <p class="header__subtitle -paragraph">
-                <strong>Happy International Women's Day!</strong>
-                <a href="https://blog.dosomething.org/a-day-without-a-woman-c8834ae50d6?gi=94c67eac291c#.i958hdm2j">Click here</a> to see how the DoSomething community is participating in <em>A Day Without A Woman</em> and how you can too.
-              </li>
-            </p>
+            <div class="buttons">
+              <button class="secondary-button">Learn More</button>
+              <button class="secondary-button">Send a Pic</button>
+              <button class="secondary-button">Share with Friends</button>
+            </div>
+          </div>
         </div>
-      </div>
 
-    </main>
+      </main>
 
-    <footer class="footer">
-      <div class="footer__columns">
+      <footer class="footer">
+        <div class="footer__columns">
 
-        <div class="footer__column -social">
+          <div class="footer__column -social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/dosomething" class="social-icon -facebook" title="dosomething on Facebook"><span>dosomething
+                    on Facebook</span></a> </li>
+              <li>
+                <a href="https://twitter.com/dosomething" class="social-icon -twitter" title="@dosomething on Twitter"><span>@dosomething
+                    on Twitter</span></a> </li>
+              <li>
+                <a href="http://dosomething.tumblr.com/" class="social-icon -tumblr" title="@dosomething on Tumblr"><span>@dosomething
+                    on Tumblr</span></a> </li>
+              <li>
+                <a href="http://instagram.com/dosomething" class="social-icon -instagram" title="@dosomething on Instagram"><span>@dosomething
+                    on Instagram</span></a> </li>
+              <li>
+                <a href="http://www.youtube.com/user/DoSomething1" class="social-icon -youtube" title="dosomething1 on YouTube"><span>dosomething1
+                    on YouTube</span></a> </li>
+            </ul>
+
+          </div>
+
+          <div class="footer__column -links">
+            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Who We Are</h4>
+            <ul>
+              <li><a href="/us/about/who-we-are">What is DoSomething.org?</a></li>
+              <li><a href="/us/about/our-people">Our Team</a></li>
+              <li><a href="/us/about/international">International</a></li>
+              <li><a href="/us/about/sexy-financials">Sexy Financials</a></li>
+              <li><a href="http://xyzfactor.org/">XYZ Factor</a></li>
+              <li><a href="https://blog.dosomething.org/">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__column -links">
+            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Our Friends</h4>
+            <ul>
+              <li><a href="http://www.tmiagency.org">TMI Agency</a></li>
+              <li><a href="/us/about/our-partners">Partners</a></li>
+              <li><a href="/us/about/old-people">Old People</a></li>
+              <li><a href="/us/about/hotline-list">Crisis Hotlines</a></li>
+            </ul>
+          </div>
+          <div class="footer__column -links">
+            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Get Involved</h4>
+            <ul>
+              <li><a href="/us/about/scholarships">Scholarships</a></li>
+              <li><a href="/us/about/were-hiring">Jobs</a></li>
+              <li><a href="/us/about/internships">Internships</a></li>
+              <li><a href="/us/about/donate-pretty-please">Donate</a></li>
+              <li><a href="/us/about/faq">FAQs</a></li>
+              <li><a href="/us/about/get-touch">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__subfooter">
           <ul>
-            <li>
-              <a href="https://www.facebook.com/dosomething" class="social-icon -facebook" title="dosomething on Facebook"><span>dosomething on Facebook</span></a>    </li>
-            <li>
-              <a href="https://twitter.com/dosomething" class="social-icon -twitter" title="@dosomething on Twitter"><span>@dosomething on Twitter</span></a>    </li>
-            <li>
-              <a href="http://dosomething.tumblr.com/" class="social-icon -tumblr" title="@dosomething on Tumblr"><span>@dosomething on Tumblr</span></a>    </li>
-            <li>
-              <a href="http://instagram.com/dosomething" class="social-icon -instagram" title="@dosomething on Instagram"><span>@dosomething on Instagram</span></a>    </li>
-            <li>
-              <a href="http://www.youtube.com/user/DoSomething1" class="social-icon -youtube" title="dosomething1 on YouTube"><span>dosomething1 on YouTube</span></a>    </li>
+            <li><a href="/us/about/terms-service">Terms of Service</a></li>
+            <li><a href="/us/about/privacy-policy">Privacy Policy</a></li>
           </ul>
+        </div>
+      </footer>
 
-        </div>
-
-        <div class="footer__column -links">
-          <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Who We Are</h4>
-          <ul>
-            <li><a href="/us/about/who-we-are">What is DoSomething.org?</a></li>
-            <li><a href="/us/about/our-people">Our Team</a></li>
-            <li><a href="/us/about/international">International</a></li>
-            <li><a href="/us/about/sexy-financials">Sexy Financials</a></li>
-            <li><a href="http://xyzfactor.org/">XYZ Factor</a></li>
-            <li><a href="https://blog.dosomething.org/">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__column -links">
-          <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Our Friends</h4>
-          <ul>
-            <li><a href="http://www.tmiagency.org">TMI Agency</a></li>
-            <li><a href="/us/about/our-partners">Partners</a></li>
-            <li><a href="/us/about/old-people">Old People</a></li>
-            <li><a href="/us/about/hotline-list">Crisis Hotlines</a></li>
-          </ul>
-        </div>
-        <div class="footer__column -links">
-          <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Get Involved</h4>
-          <ul>
-            <li><a href="/us/about/scholarships">Scholarships</a></li>
-            <li><a href="/us/about/were-hiring">Jobs</a></li>
-            <li><a href="/us/about/internships">Internships</a></li>
-            <li><a href="/us/about/donate-pretty-please">Donate</a></li>
-            <li><a href="/us/about/faq">FAQs</a></li>
-            <li><a href="/us/about/get-touch">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__subfooter">
-        <ul>
-          <li><a href="/us/about/terms-service">Terms of Service</a></li>
-          <li><a href="/us/about/privacy-policy">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </footer>
+    </div>
 
   </div>
-
-</div>
 
 
 
   <script type="text/javascript" src="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/lib.js?om3acf"></script>
   <script type="text/javascript" src="https://www.dosomething.org/misc/drupal.js?om3acf"></script>
-    <script type="text/javascript" src="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/app.js?om3acf"></script>
+  <script type="text/javascript" src="https://www.dosomething.org/profiles/dosomething/themes/dosomething/paraneue_dosomething/dist/app.js?om3acf"></script>
 
-    <script type="text/javascript" src="https://www.dosomething.org/sites/default/files/assets/v0.5.1/js/charleston.js"></script>
+  <script type="text/javascript" src="https://www.dosomething.org/sites/default/files/assets/v0.5.1/js/charleston.js"></script>
 
 </body>
+
 </html>
