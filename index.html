@@ -44,12 +44,14 @@
     .chrome,
     .chrome>.wrapper {
       background: #c71120;
+      background: url('./assets/electionheader_red.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
-    .rapid-response-container {
-      background: #c71120;
-      padding: 100px 24px 100px;
-    }
+    .rapid-response-container {}
 
     @media (min-width: 760px) {
       .rapid-response-container {
@@ -59,7 +61,7 @@
     }
 
     .header--rapid-response {
-      background: #c71120;
+      background: none;
       padding: 0;
     }
 
@@ -70,13 +72,13 @@
     .header--rapid-response .header__subtitle {
       font-size: 16px;
       font-weight: 400;
-      color: #f6ecca;
+      color: #ffffff;
       margin: 24px auto;
       text-shadow: none;
     }
 
     .header--rapid-response .header__subtitle strong {
-      color: #f6ecca;
+      color: #ffffff;
       margin: 12px auto;
     }
 
@@ -113,7 +115,8 @@
 
     .title {
       color: #ffffff;
-      font-size: 3em;
+      font-family: 'League Gothic';
+      font-size: 5.75em;
       font-weight: bold;
       text-transform: uppercase;
       text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.34);
@@ -131,7 +134,7 @@
       }
     }
 
-    button {
+    .button {
       cursor: pointer;
       margin: 15px 0;
       font-size: 1em;
@@ -148,7 +151,7 @@
     }
 
     .primary-button {
-      background: #331133;
+      background: #23b7fb;
       color: #ffffff;
     }
 
@@ -174,7 +177,7 @@
           <div class="wrapper">
             <div class="rapid-response-title">
               <h1 class="title">Today is Election Day</h1>
-              <button class="primary-button">Find your polling place</button>
+              <a class="button primary-button">Find your polling place</a>
               <p class="header__subtitle -paragraph">
                 <strong>Happy Election Day!</strong>
                 Voting is one of the most impactful things you can do. Get out there and something something something
@@ -183,79 +186,14 @@
               </p>
             </div>
             <div class="buttons">
-              <button class="secondary-button">Learn More</button>
-              <button class="secondary-button">Send a Pic</button>
-              <button class="secondary-button">Share with Friends</button>
+              <a class="button secondary-button">Learn More</a>
+              <a class="button secondary-button">Send a Pic</a>
+              <a class="button secondary-button">Share with Friends</a>
             </div>
           </div>
         </div>
 
       </main>
-
-      <footer class="footer">
-        <div class="footer__columns">
-
-          <div class="footer__column -social">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/dosomething" class="social-icon -facebook" title="dosomething on Facebook"><span>dosomething
-                    on Facebook</span></a> </li>
-              <li>
-                <a href="https://twitter.com/dosomething" class="social-icon -twitter" title="@dosomething on Twitter"><span>@dosomething
-                    on Twitter</span></a> </li>
-              <li>
-                <a href="http://dosomething.tumblr.com/" class="social-icon -tumblr" title="@dosomething on Tumblr"><span>@dosomething
-                    on Tumblr</span></a> </li>
-              <li>
-                <a href="http://instagram.com/dosomething" class="social-icon -instagram" title="@dosomething on Instagram"><span>@dosomething
-                    on Instagram</span></a> </li>
-              <li>
-                <a href="http://www.youtube.com/user/DoSomething1" class="social-icon -youtube" title="dosomething1 on YouTube"><span>dosomething1
-                    on YouTube</span></a> </li>
-            </ul>
-
-          </div>
-
-          <div class="footer__column -links">
-            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Who We Are</h4>
-            <ul>
-              <li><a href="/us/about/who-we-are">What is DoSomething.org?</a></li>
-              <li><a href="/us/about/our-people">Our Team</a></li>
-              <li><a href="/us/about/international">International</a></li>
-              <li><a href="/us/about/sexy-financials">Sexy Financials</a></li>
-              <li><a href="http://xyzfactor.org/">XYZ Factor</a></li>
-              <li><a href="https://blog.dosomething.org/">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer__column -links">
-            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Our Friends</h4>
-            <ul>
-              <li><a href="http://www.tmiagency.org">TMI Agency</a></li>
-              <li><a href="/us/about/our-partners">Partners</a></li>
-              <li><a href="/us/about/old-people">Old People</a></li>
-              <li><a href="/us/about/hotline-list">Crisis Hotlines</a></li>
-            </ul>
-          </div>
-          <div class="footer__column -links">
-            <h4 class="js-toggle-collapsed is-collapsed is-toggleable">Get Involved</h4>
-            <ul>
-              <li><a href="/us/about/scholarships">Scholarships</a></li>
-              <li><a href="/us/about/were-hiring">Jobs</a></li>
-              <li><a href="/us/about/internships">Internships</a></li>
-              <li><a href="/us/about/donate-pretty-please">Donate</a></li>
-              <li><a href="/us/about/faq">FAQs</a></li>
-              <li><a href="/us/about/get-touch">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer__subfooter">
-          <ul>
-            <li><a href="/us/about/terms-service">Terms of Service</a></li>
-            <li><a href="/us/about/privacy-policy">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </footer>
 
     </div>
 
