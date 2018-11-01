@@ -44,14 +44,16 @@
     .chrome,
     .chrome>.wrapper {
       background: #c71120;
-      background: url('./assets/electionheader_red.jpg') no-repeat center center fixed;
+      background: url('./assets/electionheader.jpg') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     }
 
-    .rapid-response-container {}
+    .rapid-response-container {
+      padding-top: 100px;
+    }
 
     @media (min-width: 760px) {
       .rapid-response-container {
@@ -116,10 +118,16 @@
     .title {
       color: #ffffff;
       font-family: 'League Gothic';
-      font-size: 5.75em;
+      font-size: 80px;
       font-weight: bold;
       text-transform: uppercase;
       text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.34);
+    }
+
+    @media (min-width: 760px) {
+      .title {
+        font-size: 90px;
+      }
     }
 
 
@@ -137,17 +145,24 @@
     .button {
       cursor: pointer;
       margin: 15px 0;
-      font-size: 1em;
+      padding: 24px 12px;
+      font-size: 18px;
       font-weight: bold;
-      width: 100%;
-      max-width: 330px;
-      height: 60px;
+      width: 90%;
       border: 0;
       border-radius: 4px;
       outline: 0;
+      vertical-align: center;
       -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
       -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.50);
+    }
+
+    @media (min-width: 760px) {
+      .button {
+        width: 100%;
+        max-width: 400px;
+      }
     }
 
     .primary-button {
@@ -158,7 +173,13 @@
     .secondary-button {
       background: #ffffff;
       color: #c71120;
-      max-width: 220px;
+    }
+
+    @media (min-width: 760px) {
+      .secondary-button {
+        width: 30%;
+        max-width: 300px;
+      }
     }
   </style>
 
@@ -187,7 +208,7 @@
             </div>
             <div class="buttons">
               <a class="button secondary-button">Learn More</a>
-              <a class="button secondary-button">Send a Pic</a>
+              <a class="button secondary-button">Send us a voting selfie</a>
               <a class="button secondary-button">Share with Friends</a>
             </div>
           </div>
