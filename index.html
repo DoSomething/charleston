@@ -193,8 +193,18 @@
       color: #ffffff;
     }
 
-    .secondary-button:hover {
+    .secondary-button:hover,
+    .secondary-button:focus {
       background: #c5313d;
+    }
+
+    .secondary-button:active {
+      background: #c71120;
+    }
+
+    .secondary-button:focus {
+      border: 1px solid #c5313d;
+      box-shadow: 0 0 3px #c5313d;
     }
 
     @media (min-width: 760px) {
